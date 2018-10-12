@@ -65,20 +65,20 @@
 	</script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
-	 <!-- // Wait for device API libraries to load -->
-            <!-- // -->
-            <!-- document.addEventListener("deviceready", onDeviceReady, false); -->
-            <!-- // device APIs are available -->
-            <!-- // -->
-            <!-- function onDeviceReady() { -->
-             <!-- document.addEventListener("backbutton", onBackKeyDown, false); -->
-            <!-- } -->
-            <!-- // Handle the back button -->
-            <!-- // -->
-            <!-- function onBackKeyDown() { -->
-             <!-- //missao_concluida(); -->
+	 // Wait for device API libraries to load
+            //
+            document.addEventListener("deviceready", onDeviceReady, false);
+            // device APIs are available
+            //
+            function onDeviceReady() {
+             document.addEventListener("backbutton", onBackKeyDown, false);
+            }
+            // Handle the back button
+            //
+            function onBackKeyDown() {
+             missao_concluida();
 			 
-            <!-- } -->
+            }
 		carrega_bomba_armada();
         setInterval("contador()",1000);
     </script>
