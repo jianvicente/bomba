@@ -19,6 +19,7 @@
 .fim{
 	background-color:#00FF00;
 }
+
 .armada{
 	background-color:red;
 	
@@ -38,10 +39,13 @@
 	height:100%;
     margin:0px;
     padding:0px;
+	position:absolute;
+	
      width:100%;
 	 display:flex;
 	 justify-content:center;
 	 align-items: center;
+	 float:bottom;
 }	
 
 .css3button {

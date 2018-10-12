@@ -13,12 +13,13 @@ function iniciar_missao(){
 	location.href='index.html';	
 }
 function carrega_pagina(){
+	
 	document.getElementById('cronometro_inicio').innerHTML = localStorage.getItem("tempo_bomba")+":00";
 }
 function carrega_bomba_armada(){
 	
 	mim = localStorage.getItem("tempo_bomba");
-	//mim = 1;
+	// mim = 0;
 	// alert(mim);
 	seg = 00;
 	document.getElementById('tempo').innerHTML = mim+":00";
@@ -63,8 +64,8 @@ function contador(){
 		}
 		tocar_som();
 	}else{
-		 // delay(2000);
-		 location.href='missao_concluida.html';
+		
+		 location.href='missao_falha.html';
 		 // continue;
 		 
 	}
@@ -89,12 +90,15 @@ function tocar_som(){
 	if(mim == 0 && seg < 10 ){
 		document.getElementById('beep').play();
 	}
-	if(mim == 0 && seg == 0 ){
-		document.getElementById('explosao').play();
-	}
+	
 	
 	
 }
+
+function carrega_explosao(){
+	document.getElementById('explosao').play();
+}
+
 
 
 
